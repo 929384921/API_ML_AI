@@ -5,8 +5,7 @@ Target release|2018/12/31
 Epic|为市民打造一个能够准确、高效预约门诊的APP（以广东省惠州市为试行点）
 Document status| DRAFT
 Document owner| Wu Xindan
-Designer| Wu Xindan
-Developer|Wu Xindan
+Designer/Developer| Wu Xindan
 QA|Wu Xindan
 
 ### Goals
