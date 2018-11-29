@@ -7,7 +7,7 @@ Document status| DRAFT
 Document owner| Wu Xindan
 Designer/Developer| Wu Xindan
 AI|推荐系统尝试——根据用户输入内容推荐挂号科室（基于内容的推荐方法）
-API|高德地图API——抓医院定点
+API|高德地图API——[搜索POI](https://lbs.amap.com/api/webservice/guide/api/search/)、[路径规划](https://lbs.amap.com/api/webservice/guide/api/direction)、[输入提示](https://lbs.amap.com/api/webservice/guide/api/inputtips)
 
 ## Background and strategic fit
 - 背景：医院是每天人流最多的地方之一；大多数患者需要1-4h的等候才能进行最基本的诊断。目前惠州没有公众号或APP对市区所有医院门诊的资料做整合，而低效的门诊效率为市民就医带来诸多不便。
