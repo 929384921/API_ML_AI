@@ -46,5 +46,5 @@ API|高德地图API——[搜索POI](https://lbs.amap.com/api/webservice/guide/a
 - 扩大覆盖率：下一版希望尝试加入多个市区，扩大APP的使用率（除惠州市外，加入其他城市，争取更多的用户及流量）
 
 ## Manifest
-[高德地图搜索POI](https://lbs.amap.com/api/webservice/guide/api/search/)
-[高德地图API-输入提示](https://lbs.amap.com/api/webservice/guide/api/inputtips)
+- [高德地图搜索POI](https://lbs.amap.com/api/webservice/guide/api/search/)
+- [高德地图API-输入提示](https://lbs.amap.com/api/webservice/guide/api/inputtips)
