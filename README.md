@@ -44,3 +44,7 @@ API|高德地图API——[搜索POI](https://lbs.amap.com/api/webservice/guide/a
 - 线上初步诊断：取消该功能，避免因数据不够庞大而带来的误诊或耽误用户的诊断治疗
 - 路线规划：取消该功能；加入导航过于繁杂，目前的知识水平或许不够操作庞大复杂的输入输出。
 - 扩大覆盖率：下一版希望尝试加入多个市区，扩大APP的使用率（除惠州市外，加入其他城市，争取更多的用户及流量）
+
+## Manifest
+[高德地图搜索POI](https://lbs.amap.com/api/webservice/guide/api/search/)
+[高德地图API-输入提示](https://lbs.amap.com/api/webservice/guide/api/inputtips)
