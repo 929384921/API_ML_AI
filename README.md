@@ -3,7 +3,7 @@
 ### Product Requirements
 Target release|2018/12/31
 :---|:---
-Epic|一个能够准确、高效预约门诊的APP（以广东省惠州市为试行点）
+Epic|通过定位、线上挂号等功能，辅助初诊、提高门诊效率的APP
 Document status| DRAFT
 Document owner| Wu Xindan
 Designer/Developer| Wu Xindan
