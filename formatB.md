@@ -4,7 +4,7 @@
 ### 产品简介
 Target release|2018/12/31
 :---|:---
-Epic|一个做给下厨房APP的插件————让菜谱会说话
+Epic|一个会说话的菜谱APP
 Document status| DRAFT
 Document owner| Wu Xindan
 Designer/Developer| Wu Xindan
@@ -12,7 +12,7 @@ Designer/Developer| Wu Xindan
 - 下厨房APP不仅提供菜谱查询、分享，还提供食材食品及厨房用品的购买。
 - 作为一个美食APP，下厨房UGC美食内容（用户原创）和大量平台培养的KOL（关键意见领袖）让其本身在电商方面具备独特优势，发展较好。
 - 下厨房的用户黏性和品牌忠诚度很高。
-- 市面主要竞争对手是豆果美食APP、
+- 市面主要竞争对手是下厨房、豆果美食、
 
 ### 产品目标
 目标|具体要求
