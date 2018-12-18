@@ -54,7 +54,7 @@ Designer/Developer| Wu Xindan
 
 ## API使用展示
 api列表
-:---|
+:---|:---
 科大讯飞|[语音合成api](https://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html)
 
 ### API输入/输出
