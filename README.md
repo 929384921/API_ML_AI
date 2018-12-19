@@ -11,7 +11,7 @@ Designer/Developer| Wu Xindan
 ### 产品背景及市场现状
 -	市场现状
     - 不少美食APP均兼备做菜教学、美食资讯、购物商城、交流学习等多种功能，深受美食爱好者的追捧。随着多款各具特色的美食APP涌现，该市场呈现出一番稳步发展的格局。 
-    - 49%的用户期望通过美食APP交流提升厨艺；调查数据显示，在使用美食APP的用户中，有49%是喜欢做菜，想通过APP交流提升厨艺，42%想学习做菜，36%的用户想了解三餐营养搭配知识，33%的用户使用美食APP主要是为了方便购买食材。
+    - **49%的用户期望通过美食APP交流提升厨艺；**调查数据显示，在使用美食APP的用户中，有49%是喜欢做菜，想通过APP交流提升厨艺，42%想学习做菜，36%的用户想了解三餐营养搭配知识，33%的用户使用美食APP主要是为了方便购买食材。
     - 从速途研究院统计的美食APP评分来看，前五名分别为香哈菜谱、下厨房、网上厨房、豆果美食和美食杰，其中下厨房累计下载量居榜首。
 -	产品背景
     - 目前市场上美食APP的菜谱功能以文字+图片+视频为主，虽然比较完善，但在使用过程中，单纯的文字解说无法很好满足用户边做边学的需求。
@@ -60,7 +60,6 @@ api列表
 
 ### API输入/输出
 - 菜谱API（通过输入需要查询的菜谱名，获取菜谱信息）
-
 ```
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
@@ -110,10 +109,78 @@ def request1(appkey, m="GET"):
     else:
         print "request api error"
 ```
+  
+  
+- 科大讯飞-语音合成api(通过输入菜谱文本，将文本转换成语音)
+```
+import base64
+import json
+import time
+import hashlib
+import urllib.request
+import urllib.parse
+# API请求地址、API KEY、APP ID等参数，提前填好备用
+api_url = "http://api.xfyun.cn/v1/service/v1/tts"
+API_KEY = "b15c3200c6d2f9552a8a2696c31daf32"
+APP_ID = "5c1921d5"
+OUTPUT_FILE = "C:\\Users\Wxd\Desktop\output.mp3"    # 输出音频的保存路径，请根据自己的情况替换
+TEXT = "苟利国家生死以，岂因祸福避趋之"
 
+# 构造输出音频配置参数
+Param = {
+    "auf": "audio/L16;rate=16000",    #音频采样率
+    "aue": "lame",    #音频编码，raw(生成wav)或lame(生成mp3)
+    "voice_name": "xiaoyan",
+    "speed": "50",    #语速[0,100]
+    "volume": "77",    #音量[0,100]
+    "pitch": "50",    #音高[0,100]
+    "engine_type": "aisound"    #引擎类型。aisound（普通效果），intp65（中文），intp65_en（英文）
+}
+# 配置参数编码为base64字符串，过程：字典→明文字符串→utf8编码→base64(bytes)→base64字符串
+Param_str = json.dumps(Param)    #得到明文字符串
+Param_utf8 = Param_str.encode('utf8')    #得到utf8编码(bytes类型)
+Param_b64 = base64.b64encode(Param_utf8)    #得到base64编码(bytes类型)
+Param_b64str = Param_b64.decode('utf8')    #得到base64字符串
+
+# 构造HTTP请求的头部
+time_now = str(int(time.time()))
+checksum = (API_KEY + time_now + Param_b64str).encode('utf8')
+checksum_md5 = hashlib.md5(checksum).hexdigest()
+header = {
+    "X-Appid": APP_ID,
+    "X-CurTime": time_now,
+    "X-Param": Param_b64str,
+    "X-CheckSum": checksum_md5
+}
+
+# 构造HTTP请求Body
+body = {
+    "text": TEXT
+}
+body_urlencode = urllib.parse.urlencode(body)
+body_utf8 = body_urlencode.encode('utf8')
+
+# 发送HTTP POST请求
+req = urllib.request.Request(api_url, data=body_utf8, headers=header)
+response = urllib.request.urlopen(req)
+
+# 读取结果
+response_head = response.headers['Content-Type']
+if(response_head == "audio/mpeg"):
+    out_file = open(OUTPUT_FILE, 'wb')
+    data = response.read() # a 'bytes' object
+    out_file.write(data)
+    out_file.close()
+ 
+In [ ]:
+   print('输出文件: ' + OUTPUT_FILE)
+else:
+    print(response.read().decode('utf8'))
+```
+输出文件: C:\Users\Wxd\Desktop\output.mp3
 
 ### API使用比较
-
+</>
 ## NOT DONING
 
 ## Manifest
