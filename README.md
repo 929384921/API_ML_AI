@@ -56,8 +56,62 @@ Designer/Developer| Wu Xindan
 api列表
 :---|
 科大讯飞——[语音合成api](https://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html)
+聚合数据——[菜谱API](https://www.juhe.cn/docs/api/id/46)
 
 ### API输入/输出
+- 菜谱API（通过输入需要查询的菜谱名，获取菜谱信息）
+
+```
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import json, urllib
+from urllib import urlencode
+ 
+#----------------------------------
+# 菜谱大全调用示例代码 － 聚合数据
+# 在线接口文档：http://www.juhe.cn/docs/46
+#----------------------------------
+ 
+def main():
+ 
+    #配置您申请的APPKey
+    appkey = "*********************"
+ 
+    #1.菜谱大全
+    request1(appkey,"GET")
+ 
+#菜谱大全
+def request1(appkey, m="GET"):
+    url = "http://apis.juhe.cn/cook/query.php"
+    params = {
+        "menu" : "", #需要查询的菜谱名
+        "key" : appkey, #应用APPKEY(应用详细页查询)
+        "dtype" : "", #返回数据的格式,xml或json，默认json
+        "pn" : "", #数据返回起始下标
+        "rn" : "", #数据返回条数，最大30
+        "albums" : "", #albums字段类型，1字符串，默认数组
+ 
+    }
+    params = urlencode(params)
+    if m =="GET":
+        f = urllib.urlopen("%s?%s" % (url, params))
+    else:
+        f = urllib.urlopen(url, params)
+ 
+    content = f.read()
+    res = json.loads(content)
+    if res:
+        error_code = res["error_code"]
+        if error_code == 0:
+            #成功请求
+            print res["result"]
+        else:
+            print "%s:%s" % (res["error_code"],res["reason"])
+    else:
+        print "request api error"
+```
+
+
 ### API使用比较
 
 ## NOT DONING
