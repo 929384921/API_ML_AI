@@ -59,7 +59,7 @@ api列表
 聚合数据——[菜谱API](https://www.juhe.cn/docs/api/id/46)
 
 ### API输入/输出
-- 菜谱API（通过输入需要查询的菜谱名，获取菜谱信息）
+- **菜谱API**（通过输入需要查询的菜谱名，获取菜谱信息）
 ```
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
@@ -111,7 +111,7 @@ def request1(appkey, m="GET"):
 ```
   
   
-- 科大讯飞-语音合成api(通过输入菜谱文本，将文本转换成语音)
+- **科大讯飞**-语音合成api(通过输入菜谱文本，将文本转换成语音)
 ```
 import base64
 import json
@@ -180,7 +180,7 @@ else:
 输出文件: C:\Users\Wxd\Desktop\output.mp3
 
 ### API使用比较
-</>
+
 ## NOT DONING
 
 ## Manifest
