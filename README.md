@@ -45,6 +45,7 @@ Designer/Developer| Wu Xindan
 运用语音合成，将菜谱文字转换成语音，让用户边听边做|
 
 ### 人工智能加值
+#### 通过语音合成，将菜谱文本内容转换成语音，让用户能够享受边听学，边学边做的过程。不仅让用户能够不用边做边翻手机，假设进一步做到的语音识别与机器对话能够让用户有交流沟通感，给一个人做饭的生活带来陪伴感。
 
 ### 人工智能概率性（精确度）
 
@@ -58,11 +59,11 @@ Designer/Developer| Wu Xindan
 ![直接登录](https://github.com/929384921/API_ML_AI/blob/master/image/登录交互1.png)
 ![第三方登录](https://github.com/929384921/API_ML_AI/blob/master/image/登录交互2.png)
 
-- 菜谱查询页面交互
+- **菜谱查询**页面交互（*菜谱API*）
 ![菜谱查询](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱查询1.png)
 ![菜谱查询2](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱查2.png)
 
-- 菜谱播报页面交互
+- **菜谱播报**页面交互（*语音合成API*）
 ![语音播报](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱播报.png)
 
 - 菜谱发表页面交互
@@ -200,4 +201,6 @@ else:
 ## 五、NOT DONING
 
 ## 六、Manifest
+- 科大讯飞——[语音合成api](https://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html)
+- 聚合数据——[菜谱API](https://www.juhe.cn/docs/api/id/46)
 
