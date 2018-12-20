@@ -54,7 +54,9 @@ Designer/Developer| Wu Xindan
 ### 产品流程图
 
 ### 产品功能原型图
-
+![登录页+首页](https://github.com/929384921/API_ML_AI/blob/master/image/1.png)
+![分类页+发布页](https://github.com/929384921/API_ML_AI/blob/master/image/2.png)
+![收藏页+我的页](https://github.com/929384921/API_ML_AI/blob/master/image/3.png)
 ## 四、API使用展示
 api列表
 :---|
