@@ -54,9 +54,20 @@ Designer/Developer| Wu Xindan
 ### 产品流程图
 
 ### 产品功能原型图
-![登录页+首页](https://github.com/929384921/API_ML_AI/blob/master/image/1.png)
-![分类页+发布页](https://github.com/929384921/API_ML_AI/blob/master/image/2.png)
-![收藏页+我的页](https://github.com/929384921/API_ML_AI/blob/master/image/3.png)
+- 登录页面交互
+![直接登录](https://github.com/929384921/API_ML_AI/blob/master/image/登录交互1.png)
+![第三方登录](https://github.com/929384921/API_ML_AI/blob/master/image/登录交互2.png)
+
+- 菜谱查询页面交互
+![菜谱查询](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱查询1.png)
+![菜谱查询2](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱查2.png)
+
+- 菜谱播报页面交互
+![语音播报](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱播报.png)
+
+- 菜谱发表页面交互
+![菜谱发表](https://github.com/929384921/API_ML_AI/blob/master/image/菜谱发表.png)
+
 ## 四、API使用展示
 api列表
 :---|
