@@ -52,7 +52,7 @@ Designer/Developer| Wu Xindan
 
 ## 三、原型展示
 ### 产品架构图
-
+![架构图](https://github.com/929384921/API_ML_AI/blob/master/image/架构图.jpg)
 ### 产品流程图
 
 ### 产品功能原型图
