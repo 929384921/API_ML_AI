@@ -54,7 +54,7 @@ Designer/Developer| Wu Xindan
 ### 产品架构图
 ![架构图](https://github.com/929384921/API_ML_AI/blob/master/image/架构图.jpg)
 ### 产品流程图
-
+![流程图](https://github.com/929384921/API_ML_AI/blob/master/image/流程图.jpg)
 ### 产品功能原型图
 - 登录页面交互
 ![直接登录](https://github.com/929384921/API_ML_AI/blob/master/image/登录交互1.png)
