@@ -5,7 +5,7 @@
 Target release|2018/12/31
 :---|:---
 Epic|一个会说话的菜谱APP
-Document status| DRAFT
+Document status| Done
 Document owner| Wu Xindan
 Designer/Developer| Wu Xindan
 ### 产品背景及市场现状
