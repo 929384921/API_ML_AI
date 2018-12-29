@@ -133,7 +133,7 @@ def request1(appkey, m="GET"):
 ```
   
   
-- **科大讯飞**-语音合成api(通过输入菜谱文本，将文本转换成语音)
+- **科大讯飞**-语音合成api(通过抓取上一步的菜谱文本，将文本转换成语音)
 ```
 import base64
 import json
@@ -143,8 +143,8 @@ import urllib.request
 import urllib.parse
 # API请求地址、API KEY、APP ID等参数，提前填好备用
 api_url = "http://api.xfyun.cn/v1/service/v1/tts"
-API_KEY = "b15c3200c6d2f9552a8a2696c31daf32"
-APP_ID = "5c1921d5"
+API_KEY = "b15c320*******************31daf32"
+APP_ID = "5****1d5"
 OUTPUT_FILE = "C:\\Users\Wxd\Desktop\output.mp3"    # 输出音频的保存路径，请根据自己的情况替换
 TEXT = "苟利国家生死以，岂因祸福避趋之"
 
