@@ -77,8 +77,10 @@ Designer/Developer| Wu Xindan
 ## 四、API使用展示
 api列表
 :---|
-科大讯飞——[语音合成api](https://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html)
 聚合数据——[菜谱API](https://www.juhe.cn/docs/api/id/46)
+科大讯飞——[语音合成API](https://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html)
+百度AI——[语音合成API](http://ai.baidu.com/docs#/TTS-Online-PHP-SDK/top)
+
 
 ### API输入/输出
 - **菜谱API**（通过输入需要查询的菜谱名，获取菜谱信息）
@@ -200,6 +202,41 @@ else:
     print(response.read().decode('utf8'))
 ```
 输出文件: C:\Users\Wxd\Desktop\output.mp3
+
+
+
+- **百度AI**-语音合成api(通过抓取的菜谱文本，将文本转换成语音)
+
+```
+from aip import AipSpeech
+
+""" 你的 APPID AK SK """
+APP_ID = '你的 App ID'
+API_KEY = '你的 Api Key'
+SECRET_KEY = '你的 Secret Key'
+
+client = new AipSpeech(APP_ID, API_KEY, SECRET_KEY);
+
+result  = client.synthesis('苟利国家生死以，岂因祸福避趋之', 'zh', 1, {
+    'vol': 5,
+})
+
+# 识别正确返回语音二进制 错误则返回dict 参照下面错误码
+if not isinstance(result, dict):
+    with open('auido.mp3', 'wb') as f:
+        f.write(result)
+
+# 成功返回二进制文件流
+# 失败返回
+{
+    "err_no":500,
+    "err_msg":"notsupport.",
+    "sn":"abcdefgh",
+    "idx":1
+}
+
+```
+
 
 ### API使用比较
 #|科大讯飞|百度AI
